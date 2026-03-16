@@ -1,5 +1,114 @@
 # Salesforce-Inspired CRM Dashboard
 
+EN: A business CRM dashboard built with React + Tailwind CSS, modeled after Salesforce workflows.
+JP: ReactとTailwind CSSで構築した、Salesforce風のビジネス向けCRMダッシュボードです。
+
+---
+
+## 🎯 Why I Built This
+
+I wanted to understand how enterprise tools like Salesforce support real business operations — customer management, sales pipeline tracking, and task coordination. Rather than building something flashy, I focused on **clarity of data, intuitive UX, and component architecture that reflects real-world business logic**.
+
+このプロジェクトは、SalesforceのようなCRMがビジネスをどう支えているかを理解するために制作しました。派手な機能よりも、業務の流れが分かりやすい設計・使いやすさ・Reactコンポーネント設計を重視しました。
+
+---
+
+## ✨ Features / 機能
+
+- **Customer / Lead Management** — Track leads with status (New, Contacted, Qualified, Closed)
+- - **Opportunity Pipeline** — Manage deals across sales stages with estimated value
+  - - **Task Management** — Assign follow-up tasks tied to customer records
+    - - **Dashboard Overview** — Key business metrics visible at a glance
+      - - **Responsive Design** — Usable on both desktop and tablet
+        - - **Bilingual UI** — Japanese and English labels throughout
+          -
+          - ---
+          -
+          - ## 🛠 Tech Stack
+          -
+          - | Category | Technology |
+          - |---|---|
+          - | Frontend Framework | React 18 (Functional Components + Hooks) |
+          - | Styling | Tailwind CSS 3 |
+          - | Build Tool | Vite |
+          - | Language | JavaScript (ES6+) |
+          - | Icons | Lucide React |
+          -
+          - ---
+          -
+          - ## 🏗 Architecture & Design Decisions
+          -
+          - **Component Structure:** Each business domain (Customers, Opportunities, Tasks) is separated into its own component with clear props and local state. This mirrors how real enterprise apps are built — domain-driven UI components.
+          -
+          - **State Management:** Managed entirely with React hooks (useState, useMemo). No external state library needed for this scope, keeping the architecture simple and readable.
+          -
+          - **Data Flow:** All data flows top-down from a central App component. Filtering and sorting logic uses useMemo to avoid unnecessary re-renders.
+          -
+          - **Accessibility:** Semantic HTML elements, ARIA labels on interactive controls, keyboard-navigable UI, and clear visual focus indicators throughout.
+          -
+          - ---
+          -
+          - ## 📁 Project Structure
+          -
+          - ```
+            crm-dashboard-react/
+            ├── src/
+            │   ├── components/
+            │   │   ├── Dashboard.jsx      # Main metrics overview
+            │   │   ├── CustomerList.jsx   # Customer/Lead management
+            │   │   ├── OpportunityList.jsx # Sales pipeline view
+            │   │   └── TaskList.jsx       # Follow-up task management
+            │   ├── App.jsx                # Root component + data
+            │   └── main.jsx               # Entry point
+            ├── index.html
+            ├── package.json
+            ├── vite.config.js
+            └── tailwind.config.js
+            ```
+
+            ---
+
+            ## 🚀 Getting Started
+
+            ```bash
+            # Clone the repository
+            git clone https://github.com/Z200-WEB/crm-dashboard-react.git
+
+            # Install dependencies
+            npm install
+
+            # Start development server
+            npm run dev
+            ```
+
+            The app runs at `http://localhost:5173`
+
+            ---
+
+            ## 📚 What I Learned
+
+            Building this project taught me how **business requirements directly shape UI and data design**. The key insight: enterprise users need information density and speed, not visual flair. Every design decision — from table layouts to status color coding — was driven by usability for non-technical users.
+
+            ---
+
+            ## 🔮 Future Improvements
+
+            - [ ] Migrate to TypeScript for type-safe component props
+            - [ ] - [ ] Add unit tests with Vitest + React Testing Library
+            - [ ] - [ ] Connect to real backend API (Node.js / Express)
+            - [ ] - [ ] Implement user authentication
+            - [ ] - [ ] Add Japanese language toggle
+            - [ ]
+            - [ ] ---
+            - [ ]
+            - [ ] ## 📄 License
+            - [ ]
+            - [ ] MIT License
+            - [ ]
+            - [ ] ---
+            - [ ]
+            - [ ] *Created by [Zawe Zaw Htet](https://z200-web.github.io/my-portofilo/) — Frontend Engineer, IT Student in Japan*# Salesforce-Inspired CRM Dashboard
+
 ## Overview
 This project is a Salesforce-inspired CRM dashboard .
 The purpose of this project is to understand how CRM systems support business operations,
